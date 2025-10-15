@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gästbok</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+<body>
+    <h1>Gästbok</h1>
+
+    <form action="">
+        <label>Namn:</label>
+        <input type="text" name="namn" id="namn" placeholder="Förnamn Efternamn" required>
+
+        <label>Email:</label>
+        <input type="email" name="email" id="email" placeholder="Din mail adress">
+
+        <label>Meddelande:</label>
+        <textarea name="kommentar" id="kommentar" rows="3" placeholder="Skriv ditt meddelande här" required></textarea>
+
+        <button type="submit">Lägg till</button>
+    </form>
+
+    <h2>Inlägg:</h2>
+</body>
+</html>

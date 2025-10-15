@@ -1,0 +1,47 @@
+body {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    background-color: #fcc9b8;
+    padding: 1rem;
+}
+
+form {
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: #ffb49b;
+    width: 55%;
+}
+
+label{
+    padding: 5px;
+}
+
+#namn, #email {
+    width: 70%;
+}
+
+.namn {
+    font-weight: bold;
+}
+
+button {
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 10px 15px;
+    background-color: white;
+    border: none;
+    width: 80px;
+    margin-top: 20px;
+
+}
+
+h1, h2 {
+    text-decoration: underline;
+}
+
