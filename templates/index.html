@@ -12,7 +12,7 @@
 <body>
     <h1>Gästbok</h1>
 
-    <form action="">
+    <form action="/tillägg" method="POST">
         <label>Namn:</label>
         <input type="text" name="namn" id="namn" placeholder="Förnamn Efternamn" required>
 
@@ -26,5 +26,22 @@
     </form>
 
     <h2>Inlägg:</h2>
+
+    {% for post in posts%}
+    <div class="post">
+        <div class="namn">Namn: {{ post.namn }}</div>
+        <div class="tid">Postat: {{ post.tid }}</div>
+        {% if post.email %}
+            <div class="email">
+                Email: <a href="mailto:{{ post.email }}">{{ post.email }}</a>
+            </div>  
+        {% endif %}
+        <div class="kommentar"><u>Kommentar:</u>
+            <br> 
+            {{ post.kommentar }}
+        </div>
+    </div>
+    {% endfor %}
+    
 </body>
 </html>

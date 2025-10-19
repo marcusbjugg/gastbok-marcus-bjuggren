@@ -18,9 +18,17 @@ form {
     width: 55%;
 }
 
-label{
+label {
     padding: 5px;
 }
+
+input, textarea {
+    padding: 4px;
+    border-radius: 4px;
+    background-color: antiquewhite;
+}
+
+
 
 #namn, #email {
     width: 70%;
@@ -28,20 +36,45 @@ label{
 
 .namn {
     font-weight: bold;
+    text-decoration: underline;
 }
 
 button {
     border-radius: 8px;
     cursor: pointer;
     padding: 10px 15px;
-    background-color: white;
+    background-color: rgb(255, 223, 180);
     border: none;
     width: 80px;
     margin-top: 20px;
+}
 
+button:hover {
+    box-shadow: 0 0 15px rgba(71, 71, 71, 0.11);
 }
 
 h1, h2 {
     text-decoration: underline;
 }
 
+.post {
+    border-color: none;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 1rem 3rem;
+    margin-top: 6vh;
+}
+
+.tid {
+    font-weight: 500;
+    margin-top: 4px;
+}
+
+.kommentar {
+    margin-top: 2vh;
+}
+
+.email {
+    margin-top: 4px;
+}
